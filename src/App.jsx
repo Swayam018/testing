@@ -4,7 +4,8 @@ function App() {
 
   return (
     <div>
-       <Home/>
+      <Home />
+      <h1 style={{color:"white"}}>Welcome to Home page</h1>
     </div>
   )
 }

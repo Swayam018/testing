@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function AutoWriteText() {
   return (
-      <div className="autocontainer"  style={{padding:"100px"}}>
+      <div className="autocontainer"  style={{padding:"100px 0px 0px 100px" ,height:"70%"}}>
         <Typewriter
           onInit={(typewriter) => {
             typewriter
