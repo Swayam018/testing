@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,6 +20,28 @@ body{
   width: 100%;
   height: 100%;
   background-color: #0a192f;
+}
+
+/*navbar page css here*/
+
+.navlink{
+  text-decoration: none;
+  color: #64ffda;
+}
+.navlinkli{
+  list-style: none;
+  
+}
+.navbaritem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 28px;
+  color: #64ffda;
+}
+.menulist{
+  display: flex;
+  gap: 29px;
 }
 
 @media (max-width:500px) {

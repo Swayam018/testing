@@ -1,32 +1,16 @@
 import React, { useEffect, useState } from "react";
 import AutoWriteText from "../Components/AutoWriteText";
+import SpalshScreen from "./SpalshScreen";
+import { Link } from "react-router-dom";
 
 function Home() {
-    const [showBanner, setShowBanner] = useState(true);
-
-    useEffect(() => {
-      const timeoutId = setTimeout(() => {
-        setShowBanner(false);
-      }, 20800);
-  
-      return () => {
-        clearTimeout(timeoutId);
-      };
-    }, []);
-  
-    const handleClose = () => {
-      setShowBanner(false);
-    };
   return (
-      <div style={{ display: showBanner ? "block" : "none", position: "fixed", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "#0a192f", zIndex: 999 }}>
-      <div style={{ height:"74vh" }}>
-      <AutoWriteText />
-          </div>
-          <div style={{display:"flex",justifyContent:"center"}}>  
-        <button onClick={handleClose} style={{ backgroundColor: "#64ffda", color: "#0a192f", padding: "10px 20px", cursor: "pointer" ,outline:"none" ,borderWidth:"0px"}}>
-          Skip
-        </button>
-          </div>
+    <div>
+      <div>
+        <h4 style={{fontSize:"20px"}}>Hi,my name is</h4>
+        <h1 style={{fontFamily:"Poppins",fontSize:"65px" ,lineHeight:"1px"}}>Swayam Sarthak Swain.</h1>
+        <h1 style={{fontFamily:"Poppins",fontSize:"65px"}}>I build products with code</h1>
+      </div>
     </div>
   );
 }
