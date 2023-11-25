@@ -29,6 +29,9 @@ body{
   .paddingarray{
     padding-left: 38px !important;
   }
+  .autocontainer{
+    padding: 19vw 0vw 0vw 5vw !important;
+  }
 }
 @media(max-width:610px) {
   .autocontainer{
